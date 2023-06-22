@@ -1,0 +1,39 @@
+#navMainContent{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.navIconRoted{
+    width: 20px;
+    transition: 0.2s ease-in-out;
+}
+.nabLinkmain:hover.navIconRoted{
+    transform: rotate(90deg);
+}
+.hoverColor:hover{
+    color: #FF478A;
+}
+.logoImg{
+    width: 44px;
+}
+.logowImg{
+    height: 28px;
+}
+
+@media screen and (max-width:600px){
+    .logowImg{
+        display:none;
+    }
+    .disableLogin{
+        display: none;
+    }
+   
+}
+@media only screen and (min-width: 600px){
+    .minWithDisable{
+      display: none;
+    }   
+}

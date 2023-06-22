@@ -1,0 +1,19 @@
+@media screen and (max-width:600px){
+  #mainContentId{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 600px){
+  #mainContentId{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width:1201px){
+  #mainContentId{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
