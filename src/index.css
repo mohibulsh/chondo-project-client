@@ -7,13 +7,43 @@
 
 @media only screen and (max-width: 1200px) and (min-width: 600px){
   #mainContentId{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width:1201px){
   #mainContentId{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
   }
+}
+
+
+/* common css for chondo */
+.chondoColor{
+  color: #FF478A;
+}
+.videoBtn{
+  border: 1px dotted rgba(65, 64, 64, 0.349);
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-right: 15px;
+  font-weight: bold;
+  background-color: transparent;
+}
+.downloadAppBtn{
+  border: none;
+  background-color: #FF478A;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.videoBtn:hover{
+  color:#FF478A;
+}
+.downloadAppBtn:hover{
+  background-color: #f1075d;
 }

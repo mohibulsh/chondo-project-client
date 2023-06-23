@@ -1,10 +1,28 @@
 .bgImg{
+    width: 100%;
     background-image:url('../../../assets/banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 50px 0;
+    padding: 20px 0;
 }
-.hello{
-    color: red;
+.mainBanner{
+    padding-top: 150px;
+}
+.bannerTextContainer{
+    padding:0 60px 200px 50px;
+
+}
+.BannerHeading{
+    font-size: 45px;
+    padding-bottom: 60px;
+}
+.bannerDescription{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.bannerImg img{
+    width: 360px;
+    height: 480px;
 }

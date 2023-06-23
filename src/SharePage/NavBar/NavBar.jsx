@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -9,21 +8,25 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/logo.png'
 import logow from '../../assets/chw.png'
-import {LiaAngleDownSolid } from "react-icons/lia"
+import { LiaAngleDownSolid } from "react-icons/lia"
 import './NavBar.css'
+import { NavLink } from 'react-router-dom';
 const NavBar = () => {
     const expand = "lg"
 
     const navItem = <>
-        <Nav.Link className='hoverColor' href="#action1"><p className='nabLinkmain'>Features <span className='navIconRoted fs-5'> <LiaAngleDownSolid/> </span></p></Nav.Link>
-        <Nav.Link className='hoverColor' href="#action2"><span>Chondopedia <LiaAngleDownSolid/></span></Nav.Link>
-        <Nav.Link className='hoverColor' href="#action2">Shop</Nav.Link>
-        <Nav.Link className='hoverColor' href="#action2">Blogs</Nav.Link>
-        <Nav.Link className='hoverColor' href="#action2"><span>Resources <LiaAngleDownSolid/></span></Nav.Link>
+        <NavLink className='hoverColor' to="/features">Features
+            <span className='navIconRoted fs-5'> <LiaAngleDownSolid /> </span></NavLink>
+        <Nav.Link className='hoverColor'><NavLink><span>Chondopedia <LiaAngleDownSolid /></span>
+        </NavLink></Nav.Link>
+        <Nav.Link className='hoverColor'><NavLink to='/shop'>Shop</NavLink></Nav.Link>
+        <Nav.Link className='hoverColor' ><NavLink>Blogs</NavLink></Nav.Link>
+        <Nav.Link className='hoverColor'><NavLink><span>Resources <LiaAngleDownSolid />
+        </span></NavLink></Nav.Link>
     </>
     return (
         <nav>
-            <Navbar id='navMainContent'  expand="lg" className="bg-body-tertiary">
+            <Navbar id='navMainContent' expand="lg" className="bg-body-tertiary">
                 <Container id='mainContentId' fluid>
                     <Navbar.Brand href="#">
                         <div className='d-flex gap-4'>
@@ -33,7 +36,7 @@ const NavBar = () => {
                             </div>
                             <div className=" d-flex mt-4 ">
                                 <Nav.Link className='minWithDisable' href="#action2 pb-2">Login</Nav.Link>
-                                <Button className='minWithDisable btn ms-4'>Download</Button>
+                                <button className='minWithDisable downloadAppBtn'>Download App</button>
                             </div>
                         </div>
                     </Navbar.Brand>
@@ -50,14 +53,13 @@ const NavBar = () => {
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-center gap-4 flex-grow-1 pe-3">
+                            <Nav className="navItemfont justify-content-center gap-4 flex-grow-1 pe-3">
                                 {navItem}
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                     <div className="d-flex">
-                        <Nav.Link className='disableLogin' href="#action2">Login</Nav.Link>
-                        <Button className='btn ms-4 disableLogin'>Download</Button>
+                        <button className='downloadAppBtn'>Download App</button>
                     </div>
                 </Container>
             </Navbar>
