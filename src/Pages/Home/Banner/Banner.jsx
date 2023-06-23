@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div>
             <div className='bgImg'>
-                <div className='mainBanner d-flex' id='mainContentId' >
+                <div className='mainBanner ' id='mainContentId' >
                     <div className='bannerTextContainer'>
                         <div>
                             <h1 className='BannerHeading'>Undestand the <span className='chondoColor'>Rhythm</span> <br />

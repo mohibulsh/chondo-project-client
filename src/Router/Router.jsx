@@ -4,8 +4,10 @@ import {
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Features from "../Pages/Features/Features";
+import ChondoPadia from "../Pages/ChondoPadia/ChondoPadia";
 import Shop from "../Pages/Shop/Shop";
-
+import Blogs from "../Pages/Blogs/Blogs";
+import Resources from "../Pages/Resources/Resources";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -16,13 +18,26 @@ export const router = createBrowserRouter([
             element:<Home/>
         },
         {
-          Path:'features',
+          path:'features',
           element:<Features/>
+        },
+        {
+          path:'chondopadia',
+          element:<ChondoPadia/>
         },
         {
           path:'shop',
           element:<Shop/>
-        }
+        },
+        {
+          path:'Blogs',
+          element:<Blogs/>
+        },
+        {
+          path:'resources',
+          element:<Resources/>
+        },
+        
     ]
   },
 ]);

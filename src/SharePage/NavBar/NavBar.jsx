@@ -15,13 +15,13 @@ const NavBar = () => {
     const expand = "lg"
 
     const navItem = <>
-        <NavLink className='hoverColor' to="/features">Features
-            <span className='navIconRoted fs-5'> <LiaAngleDownSolid /> </span></NavLink>
-        <Nav.Link className='hoverColor'><NavLink><span>Chondopedia <LiaAngleDownSolid /></span>
+        <Nav.Link className='hoverColor'><NavLink  to='/features'>Features
+            <span className='navIconRoted fs-5'> <LiaAngleDownSolid /> </span></NavLink></Nav.Link>
+        <Nav.Link className='hoverColor'><NavLink to='/chondopadia' className='hoverLink'>Chondopedia <span className='navIcon'><LiaAngleDownSolid /></span>
         </NavLink></Nav.Link>
         <Nav.Link className='hoverColor'><NavLink to='/shop'>Shop</NavLink></Nav.Link>
-        <Nav.Link className='hoverColor' ><NavLink>Blogs</NavLink></Nav.Link>
-        <Nav.Link className='hoverColor'><NavLink><span>Resources <LiaAngleDownSolid />
+        <Nav.Link className='hoverColor' ><NavLink to='blogs'>Blogs</NavLink></Nav.Link>
+        <Nav.Link className='hoverColor'><NavLink to='/resources'><span>Resources <LiaAngleDownSolid />
         </span></NavLink></Nav.Link>
     </>
     return (
@@ -34,8 +34,7 @@ const NavBar = () => {
                                 <img className='logoImg' src={logo} alt="" />
                                 <img className='logowImg' src={logow} alt="" />
                             </div>
-                            <div className=" d-flex mt-4 ">
-                                <Nav.Link className='minWithDisable' href="#action2 pb-2">Login</Nav.Link>
+                            <div className=" d-flex">
                                 <button className='minWithDisable downloadAppBtn'>Download App</button>
                             </div>
                         </div>
@@ -58,8 +57,8 @@ const NavBar = () => {
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
-                    <div className="d-flex">
-                        <button className='downloadAppBtn'>Download App</button>
+                    <div>
+                        <button className='downloadAppBtn navBtn'>Download App</button>
                     </div>
                 </Container>
             </Navbar>
