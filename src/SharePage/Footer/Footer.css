@@ -20,7 +20,7 @@
     grid-template-columns: repeat(5,1fr);
 }
 .footerIcon:hover{
-    background-color: rgba(68, 66, 66, 0.74);
+    background-color: #FF478A;
 }
 .Ficon{
     color:white;

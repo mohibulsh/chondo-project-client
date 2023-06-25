@@ -14,10 +14,10 @@ const CeoSliper = () => {
     return (
         <div id="mainContentId" className="sliderMain">
             <Swiper
-                spaceBetween={30}
+                spaceBetween={50}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 10000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
