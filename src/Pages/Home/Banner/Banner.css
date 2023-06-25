@@ -28,7 +28,7 @@
     height: 480px;
 }
 @media only screen and (min-width:780px) {
-    .mainBanner{
+    .mainBanner,.TrackingmainBanner{
         display: flex;
     }
 }
@@ -36,7 +36,19 @@
     .bannerTextContainer{
         padding:0 20px 120px 20px;
     }
-    .mainBanner{
+    .mainBanner ,.TrackingmainBanner{
         padding-top: 100px;
     }
+}
+@media only screen and (min-width:1080px) {
+   .bannerImg img{
+    width: 450px;
+   }
+   .mainBanner {
+    gap: 100px;
+    justify-content: space-around;
+   }
+   .BannerHeading{
+    font-size: 60px;
+   }
 }

@@ -1,0 +1,83 @@
+.sliderMain{
+    padding: 20px 40px 100px 40px;
+}
+.ceoImg{
+    background-image: linear-gradient(to right, rgba(255,0,0,0),rgba(255, 71, 138, 0.301)),url(../../../assets/Ceo1.png);
+    width: 504px;
+    height: 604px;
+    border-radius: 57px;
+    position: relative;
+}
+.ceoBanner{
+    background: url(../../../assets/Ceo2.jpg);
+    width: 843px;
+    height: 400px;
+    border-radius: 10px;
+    position: absolute;
+    top: 16.5%;
+    right:10px;
+    z-index: 1;
+}
+.sliderContainer{
+    display: flex;
+}
+.ceoTextContainer{
+    width: 729px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: 0 auto;
+}
+.ceoChondo{
+    color: rgb(145, 136, 136);
+}
+
+@media only screen and (min-width:1080px) {
+    .sliderContainer{
+        display: flex;
+    }
+ }
+ @media screen and (max-width:600px){
+    .ceoBanner{
+        width: 480px;
+        left: 0;
+        height: 450px;
+    }
+    .ceoTextContainer{
+        width: 450px;
+    }
+    .ceoImg{
+        width: 420px;
+        padding-left: 10px;
+    }
+    .sliderMain{
+        padding: 50px 5px 100px 5px;
+    }
+ }
+
+ @media only screen and (min-width:1080px) {
+    .sliderContainer{
+        display: flex;
+    }
+ }
+ @media screen and (max-width:450px){
+    .ceoBanner{
+        width: 370px;
+        left: 0;
+        top: 50%;
+        height: 490px;
+    }
+    .ceoTextContainer{
+        width: 350px;
+        height: 350px;
+    }
+    .ceoImg{
+        width: 350px;
+        padding-left: 10px;
+    }
+    .sliderMain{
+        padding: 50px 5px 100px 5px;
+    }
+ }
+ 

@@ -10,12 +10,12 @@ import logo from '../../assets/logo.png'
 import logow from '../../assets/chw.png'
 import { LiaAngleDownSolid } from "react-icons/lia"
 import './NavBar.css'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const NavBar = () => {
     const expand = "lg"
 
     const navItem = <>
-        <Nav.Link className='hoverColor'><NavLink  to='/features'>Features
+        <Nav.Link className='hoverColor'><NavLink to='/features'>Features
             <span className='navIconRoted fs-5'> <LiaAngleDownSolid /> </span></NavLink></Nav.Link>
         <Nav.Link className='hoverColor'><NavLink to='/chondopadia' className='hoverLink'>Chondopedia <span className='navIcon'><LiaAngleDownSolid /></span>
         </NavLink></Nav.Link>
@@ -31,8 +31,10 @@ const NavBar = () => {
                     <Navbar.Brand href="#">
                         <div className='d-flex gap-4'>
                             <div className='logoMain'>
-                                <img className='logoImg' src={logo} alt="" />
-                                <img className='logowImg' src={logow} alt="" />
+                                <Link to='/'>
+                                    <img className='logoImg' src={logo} alt="" />
+                                    <img className='logowImg' src={logow} alt="" />
+                                </Link>
                             </div>
                             <div className=" d-flex">
                                 <button className='minWithDisable downloadAppBtn'>Download App</button>

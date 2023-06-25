@@ -17,6 +17,12 @@
     margin: 0 auto;
   }
 }
+@media screen and (min-width:1440px){
+  #mainContentId{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
 
 
 /* common css for chondo */
@@ -52,4 +58,7 @@
 }
 .downloadAppBtn:hover{
   background-color: #f1075d;
+}
+.description{
+  line-height: 30px;
 }

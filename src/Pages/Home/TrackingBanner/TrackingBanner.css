@@ -1,0 +1,11 @@
+@media only screen and (min-width:1080px) {
+    .TrackingmainBanner{
+        justify-content: space-between;
+    }
+}
+.TrackingmainBanner{
+    padding-top:100px;
+}
+.storageLink img{
+    width: 145px;
+}
